@@ -1,5 +1,10 @@
+body {
+    overflow-x: hidden;
+}
 
-
+hr {
+    overflow: hidden;
+}
 .navbar-nav {
     margin-right: 50px;
 }

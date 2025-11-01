@@ -1,0 +1,56 @@
+
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
+.c-item {
+    height: 550px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.text-muted {
+    margin-top: 50px;
+}
+
+.banner {
+    position: relative;
+    height: 100px;
+}
+.hr {
+    margin-top: 90px;
+    border: 2px solid #B38230   ;
+}
+.banner-img {
+    position: absolute;
+    width: 250px;
+    inset: 0;
+    margin: auto;
+    top: -126px;
+    
+}
+.stat-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.stat-icon {
+    font-size: 40px;
+    color: #007bff;
+    /* Example color - change as needed */
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 360px) {
+    
+}

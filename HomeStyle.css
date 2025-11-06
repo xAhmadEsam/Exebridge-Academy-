@@ -21,10 +21,12 @@ hr {
 
 
 .banner {
+
     position: relative;
     height: 100px;
 }
 .hr {
+    overflow: hidden;
     margin-top: 90px;
     border: 2px solid #B38230   ;
 }
@@ -53,6 +55,162 @@ hr {
     font-weight: bold;
 }
 
-@media screen and (max-width: 360px) {
-    
+
+.card{
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow:hidden;
+    border-radius:20px;
+    min-height:450px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+
+@media (max-width: 768px) {
+    min-height:350px;
 }
+
+@media (max-width: 420px) {
+    min-height:400px;
+
+}
+
+&.card-has-bg{
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    object-fit: cover;
+    background-size:210%;
+    background-repeat:no-repeat;
+    background-position: center center;
+    &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            -webkit-filter: grayscale(0.3);
+        -moz-filter: grayscale(30%);
+        -ms-filter: grayscale(30%);
+        -o-filter: grayscale(30%);
+        filter: grayscale(30%);
+}
+
+.card-body-speach {
+    margin-top : 30px;
+    font-size: 1.1em;
+    opacity: 0;
+    backdrop-filter: blur(1px);
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+}
+
+.pizza {
+    color: antiquewhite;
+}
+&:hover {
+        transform: scale(0.98);
+        box-shadow: 0 0 5px -2px rgba(0,0,0,0.3);
+        background-size:190%;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+        .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        
+        }
+        .card-body-speach {
+            margin-top: 40px;
+            font-size: 1.1em;
+            opacity: 1;
+            backdrop-filter: blur(2px);
+        }
+    }
+
+}
+
+.card-footer button {
+    backdrop-filter: blur(5px);
+}
+.card-footer{
+    background: none;
+    border-top: none;
+    
+        .media{
+        img{
+        border:solid 3px rgba(255,255,255,0.3);
+        }
+    }
+    }
+    .card-title{font-weight:800}
+    .card-title a {text-decoration: none;}
+    .card-meta{color:rgba(0,0,0,0.3);
+    text-transform:uppercase;
+    font-weight:500;
+    letter-spacing:2px;}
+    .card-body{ 
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    
+
+    }
+    &:hover {
+    .card-body{
+        margin-top:30px;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        
+    }
+    cursor: pointer;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+    .card-body-speach {
+            font-size: 0.9em;
+            visibility: visible;
+            backdrop-filter: blur(2px);
+        }
+        
+        .card {
+            font-size: 0.9em;
+        }
+    .card:hover {
+        
+        
+        .card-body-speach {
+            
+            visibility: visible;
+            backdrop-filter: blur(2px);
+        }
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .card-body-speach {
+            font-size: 0.9em;
+            visibility: visible;
+            backdrop-filter: blur(2px);
+        }
+        
+        .card {
+            font-size: 0.8em;
+            height: 700px;
+        }
+    .card:hover {
+        
+        
+        .card-body-speach {
+            
+            visibility: visible;
+            backdrop-filter: blur(2px);
+        }
+    
+    }
+}
+
+

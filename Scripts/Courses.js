@@ -73,7 +73,7 @@ function renderCourses(courses, selectedFilters = []) {
             <p class="card-text">${course.mainText}</p>
             </div>
             <div class="card-body">
-            <a href="#" class="card-link" data-abc="true">Book Now</a>
+            <a href=${course.link} class="card-link" data-abc="true">Book Now</a>
             <a href="#" class="card-link" data-abc="true">Contact us</a>
             </div>
         </div>

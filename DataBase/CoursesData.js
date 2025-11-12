@@ -35,22 +35,11 @@ export const courses = [
         link: 'Courses/Steak.html'
     },
     {
-        name: 'London Modern dishes',
-        mainText: 'For what reason would it be advisable for me to think about business content?',
-        filterTags: ['London modern dishes', 'Cuisine Type'],
-        
-    },
-    {
         name: 'Croisant',
         mainImg: 'Assets/Imgs/Croisant/1.jpg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Croissant', 'Dish Type'],
         link: 'Courses/Croisant.html'
-    },
-    {
-        name: 'Bread',
-        mainText: 'For what reason would it be advisable for me to think about business content?',
-        filterTags: ['Bread', 'Dish Type']
     },
     {
         name: 'Pizza',
@@ -61,8 +50,10 @@ export const courses = [
     },
     {
         name: 'Chocolate',
+        mainImg: 'Assets/Imgs/Choclet/5.jpg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Chocolate', 'Desserts & Sweets'],
+        link: 'Courses/Chocolate.html'
     },
     {
         name: 'Cake',
@@ -79,23 +70,11 @@ export const courses = [
         link: 'Courses/MiddleEastDessert.html'
     },
     {
-        name: 'Gastronomy food',
-        mainText: 'For what reason would it be advisable for me to think about business content?',
-        filterTags: ['Gastronomy food', 'Techniques & Styles'],
-
-    },
-    {
         name: 'Isomalt sugar art',
         mainImg: 'Assets/Imgs/Isomaltsugarart/1.jpg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Isomalt sugar art', 'Desserts & Sweets', 'Techniques & Styles'],
         link: 'Courses/SugarArt.html'
-    },
-    {
-        name: 'Parista',
-        mainText: 'For what reason would it be advisable for me to think about business content?',
-        filterTags: ['Parista', 'Beverages'],
-
     },
     {
         name: 'Fruit & vegetables carving',

@@ -5,12 +5,10 @@ body {
 hr {
     overflow: hidden;
 }
-.navbar-nav {
-    margin-right: 50px;
-}
+
 
 .c-item {
-    height: 550px;
+    height: 600px;
 }
 
 .c-img {

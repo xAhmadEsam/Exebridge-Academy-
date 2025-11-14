@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact / Register</title>
+	<link rel="stylesheet" href="Course1.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		/* small local styles for the form */
+		.contact-card { max-width:720px; margin:48px auto; }
+		.hidden { display:none; }
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="../Assets/Imgs/Logo2.png" alt="Logo" width="70" height="70">
+			</a>
+			<p class="navbar-brand">Exebridge Academy</p>
+		</div>
+	</nav>
+
+	<main class="container contact-card">
+		<div class="card shadow-sm">
+			<div class="card-body">
+				<h3 class="card-title mb-3">Register for a course</h3>
+				<p class="text-muted">Fill your name, age and confirm the course you want to attend.</p>
+
+				<form id="contactForm">
+					<div class="mb-3">
+						<label for="name" class="form-label">Full name</label>
+						<input type="text" id="name" name="name" class="form-control" required>
+					</div>
+
+					<div class="mb-3">
+						<label for="email" class="form-label">Email</label>
+						<input type="email" id="email" name="email" class="form-control" required placeholder="you@example.com">
+					</div>
+
+					<div class="mb-3">
+						<label for="age" class="form-label">Age</label>
+						<input type="number" id="age" name="age" class="form-control" min="1" required>
+					</div>
+
+					<div class="mb-3">
+						<label for="course" class="form-label">Course</label>
+						<select id="course" name="course" class="form-select" required>
+							<option value="">-- Select a course --</option>
+							<option>Asian</option>
+							<option>Cake</option>
+							<option>Chocolate</option>
+							<option>Croisant</option>
+							<option>F&VCarving</option>
+							<option>FrenchCusine</option>
+							<option>InnovativeDishes</option>
+							<option>Italian</option>
+							<option>MiddleEast</option>
+							<option>MiddleEastDessert</option>
+							<option>Pizza</option>
+							<option>Steak</option>
+							<option>SugarArt</option>
+						</select>
+					</div>
+
+					<div class="d-flex gap-2">
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<a href="../Courses.html" class="btn btn-outline-secondary">Back to courses</a>
+					</div>
+				</form>
+
+				<div id="result" class="alert alert-success mt-3 hidden" role="alert"></div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="py-4 text-center text-muted">2025 © Exebridge Academy</footer>
+
+	<script>
+		// Helper to read query params
+		function getQueryParam(name) {
+			const params = new URLSearchParams(window.location.search);
+			return params.get(name);
+		}
+
+		// When page loads, try to auto-select the course from ?course=...
+		document.addEventListener('DOMContentLoaded', function() {
+			const courseParam = getQueryParam('course');
+			const courseSelect = document.getElementById('course');
+			if (courseParam) {
+				// decode and try to match an existing option (case-sensitive match of visible text)
+				const decoded = decodeURIComponent(courseParam.replace(/\+/g, ' ')).trim();
+				let matched = false;
+				for (const opt of courseSelect.options) {
+					if (opt.text.trim().toLowerCase() === decoded.toLowerCase()) { opt.selected = true; matched = true; break; }
+				}
+				if (!matched) {
+					// if not found, add it and select
+					const newOpt = document.createElement('option');
+					newOpt.text = decoded; newOpt.selected = true; courseSelect.add(newOpt);
+				}
+			}
+
+			// handle form submit (demo behaviour: show message and reset)
+			const form = document.getElementById('contactForm');
+			const resultEl = document.getElementById('result');
+				form.addEventListener('submit', function(e) {
+					e.preventDefault();
+					const name = document.getElementById('name').value.trim();
+					const email = document.getElementById('email').value.trim();
+					const age = document.getElementById('age').value.trim();
+					const course = document.getElementById('course').value.trim();
+					// basic validation now includes email
+					if (!name || !email || !age || !course) {
+						resultEl.className = 'alert alert-danger mt-3';
+						resultEl.textContent = 'Please complete all fields.';
+						resultEl.classList.remove('hidden');
+						return;
+					}
+
+					// Compose a formal message and open WhatsApp chat with the academy number.
+					const academyNumber = '447526098834'; // international format without +
+					const message = `Hello Exebridge Academy,\n\nMy name is ${name}.\nI would like to register for the "${course}" course.\nI am ${age} years old.\nEmail: ${email}.\n\nPlease let me know the next steps and available dates.`;
+					const waUrl = 'https://wa.me/' + academyNumber + '?text=' + encodeURIComponent(message);
+
+					// Open WhatsApp (new tab). The user will need to confirm/send the message in WhatsApp.
+					window.open(waUrl, '_blank');
+
+					resultEl.className = 'alert alert-success mt-3';
+					resultEl.textContent = `Thank you ${name}! A WhatsApp window was opened so you can confirm and send your registration for "${course}".`;
+					resultEl.classList.remove('hidden');
+					form.reset();
+				});
+		});
+	</script>
+
+</body>
+</html>

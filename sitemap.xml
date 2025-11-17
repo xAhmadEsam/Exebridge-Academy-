@@ -2,23 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Replace example.com with your real domain before submitting to Google Search Console -->
     <url>
-        <loc>https://yourdomain.com/</loc>
+        <loc>https://exebridgeacademy.com/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://yourdomain.com/HomePage.html</loc>
+        <loc>https://exebridgeacademy.com/index.html</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://yourdomain.com/Courses.html</loc>
+        <loc>https://exebridgeacademy.com/Courses.html</loc>
         <priority>0.80</priority>
     </url>
     <!-- Add each course page and other important pages: -->
     <url>
-        <loc>https://yourdomain.com/Courses/Chocolate.html</loc>
+        <loc>https://exebridgeacademy.com/Courses/Chocolate.html</loc>
     </url>
     <url>
-        <loc>https://yourdomain.com/Courses/Pizza.html</loc>
+        <loc>https://exebridgeacademy.com/Courses/Pizza.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/Asian.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/Cake.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/Croisant.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/F&VCarving.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/FrenchCusine.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/Italian.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/InnovativeDishes.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/MiddleEast.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/MiddleEastDessert.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/Steak.html</loc>
+    </url>
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/SugarArt.html</loc>
     </url>
     <!-- Continue adding pages as needed -->
 </urlset>

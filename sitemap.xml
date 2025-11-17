@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Replace example.com with your real domain before submitting to Google Search Console -->
+    <url>
+        <loc>https://yourdomain.com/</loc>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://yourdomain.com/HomePage.html</loc>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://yourdomain.com/Courses.html</loc>
+        <priority>0.80</priority>
+    </url>
+    <!-- Add each course page and other important pages: -->
+    <url>
+        <loc>https://yourdomain.com/Courses/Chocolate.html</loc>
+    </url>
+    <url>
+        <loc>https://yourdomain.com/Courses/Pizza.html</loc>
+    </url>
+    <!-- Continue adding pages as needed -->
+</urlset>

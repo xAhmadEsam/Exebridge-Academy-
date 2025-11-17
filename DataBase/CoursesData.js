@@ -78,10 +78,10 @@ export const courses = [
     },
     {
         name: 'Fruit & vegetables carving',
-        mainImg: 'Assets/Imgs/Fruit&vegetablescarving/1.jpg',
+        mainImg: 'Assets/Imgs/Fruit%26vegetablescarving/1.jpg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Techniques & Styles'],
-        link: 'Courses/F&VCarving.html'
+            link: 'Courses/F-V-Carving.html'
     },
     {
         name: 'French cuisine',

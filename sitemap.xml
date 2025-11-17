@@ -1,57 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Replace example.com with your real domain before submitting to Google Search Console -->
+    <!-- Generated sitemap — update domain if different -->
     <url>
         <loc>https://exebridgeacademy.com/</loc>
+        <lastmod>2025-11-17</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/index.html</loc>
+        <lastmod>2025-11-17</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses.html</loc>
+        <lastmod>2025-11-17</lastmod>
         <priority>0.80</priority>
     </url>
-    <!-- Add each course page and other important pages: -->
+    <!-- Course pages -->
     <url>
         <loc>https://exebridgeacademy.com/Courses/Chocolate.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/Pizza.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/Asian.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/Cake.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/Croisant.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
-        <loc>https://exebridgeacademy.com/Courses/F%26VCarving.html</loc>
+        <loc>https://exebridgeacademy.com/Courses/F-V-Carving.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/FrenchCusine.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/Italian.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/InnovativeDishes.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/MiddleEast.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/MiddleEastDessert.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/Steak.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
     <url>
         <loc>https://exebridgeacademy.com/Courses/SugarArt.html</loc>
+        <lastmod>2025-11-17</lastmod>
     </url>
-    <!-- Continue adding pages as needed -->
+    <url>
+        <loc>https://exebridgeacademy.com/Courses/CoursesContact.html</loc>
+        <lastmod>2025-11-17</lastmod>
+    </url>
 </urlset>

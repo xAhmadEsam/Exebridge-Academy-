@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 # Point crawlers to the XML sitemap
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://exebridgeacademy.com/sitemap.xml

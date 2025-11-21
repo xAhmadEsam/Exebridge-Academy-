@@ -1,3 +1,4 @@
+html { scroll-behavior: smooth; }
 .gallery-container {
 max-width: 400px;
 margin: auto;

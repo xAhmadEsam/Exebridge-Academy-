@@ -1,4 +1,5 @@
 /* ===== Global ===== */
+html { scroll-behavior: smooth; }
 * { box-sizing: border-box; }
 
 html { scrollbar-gutter: stable; } /* avoid page width shift when scrollbar appears */

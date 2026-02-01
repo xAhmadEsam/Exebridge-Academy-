@@ -1,7 +1,14 @@
 export const courses = [
     {
+        name: 'Hygiene',
+        mainImg: 'Assets/Imgs/Hygiene/1.jpeg',
+        mainText: 'For what reason would it be advisable for me to think about business content?',
+        filterTags: ['Hygiene', 'Cuisine Type'],
+        link: 'https://nobleshieldhygiene.com/'
+    },
+    {
         name: 'Italian',
-        mainImg: 'Assets/Imgs/Italian/1.jpg',
+        mainImg: 'Assets/Imgs/Italian/1.jpeg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Italian cuisine', 'Cuisine Type'],
         link: 'Courses/Italian.html'
@@ -15,7 +22,7 @@ export const courses = [
     },
     {
         name: 'Asian',
-        mainImg: 'Assets/Imgs/Asian/1.jpg',
+        mainImg: 'Assets/Imgs/Asian/1.jpeg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Asian cuisine', 'Cuisine Type'],
         link: 'Courses/Asian.html'
@@ -29,7 +36,7 @@ export const courses = [
     },
     {
         name: 'Steak',
-        mainImg: 'Assets/Imgs/Steak/1.jpg',
+        mainImg: 'Assets/Imgs/Steak/1.jpeg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Steak', 'Dish Type'],
         link: 'Courses/Steak.html'
@@ -43,7 +50,7 @@ export const courses = [
     },
     {
         name: 'Pizza',
-        mainImg: 'Assets/Imgs/Pizza/1.jpg',
+        mainImg: 'Assets/Imgs/Pizza/1.jpeg',
         mainText: 'For what reason would it be advisable for me to think about business content?',
         filterTags: ['Pizza', 'Dish Type'],
         link: 'Courses/Pizza.html'

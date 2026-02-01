@@ -2,7 +2,7 @@ export const courses = [
     {
         name: 'Hygiene',
         mainImg: 'Assets/Imgs/Hygiene/1.jpeg',
-        mainText: 'For what reason would it be advisable for me to think about business content?',
+        mainText: 'Build consumer trust and meet United Kingdom regulations with our comprehensive food hygiene course...',
         filterTags: ['Hygiene', 'Cuisine Type'],
         link: 'https://nobleshieldhygiene.com/'
     },

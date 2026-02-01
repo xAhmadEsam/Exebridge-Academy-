@@ -183,6 +183,7 @@ body {
     margin-bottom: 1.5rem;
     overflow: hidden;
     transition: box-shadow .2s ease-in;
+
 }
 .card:hover { box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05); }
 .card-body p:last-child { margin-bottom: 0; }
@@ -192,6 +193,31 @@ body {
     transition: color .3s ease-in;
 }
 .card-link:hover { color: #470c0c; cursor: pointer; }
+
+/* ===== Equal-height cards (responsive) ===== */
+/* Make grid columns in card-equal rows stretch so cards in the same row have equal height */
+.row.card-equal > [class*="col-"] {
+    display: flex;
+    align-items: stretch; /* ensures child (.card) fills the column height */
+} 
+
+/* Make the card a vertical flex container so body can grow */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Allow the card body to expand so content isn't cut off */
+.card .card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Safety: ensure internal flex items can shrink on narrow screens */
+.card * { min-height: 0; }
 
 /* ===== Media / Image ratio helpers ===== */
 .media {
@@ -231,5 +257,14 @@ body {
     color: #fff;
     border: none;
     background: linear-gradient(45deg,#448bff,#44e9ff);
+}
+
+/* ===== Footer improvements (responsive) ===== */
+footer .social-media a { margin-right: 1rem; display: inline-flex; align-items: center; justify-content:center; width:36px; height:36px; border-radius:6px; transition: background .15s ease; }
+footer .social-media a:hover { background: rgba(0,0,0,0.05); }
+@media (max-width: 576px) {
+  footer .row > [class*="col-"] { text-align: center; margin-bottom: 1rem; }
+  footer .text-lg-end { text-align: center !important; }
+  .d-sm-flex.justify-content-between.py-1 { flex-direction: column; gap: .5rem; align-items: center; }
 }
 

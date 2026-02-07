@@ -28,13 +28,6 @@ export const courses = [
         link: 'Courses/MiddleEast.html'
     },
     {
-        name: 'Gastronomy Food',
-        mainImg: 'Assets/Imgs/Gastronomy/1.jpeg',
-        mainText: 'A Gastronomy Food course introduces the art and science of food, focusing on flavor, appearance, texture, and the overall dining experience...',
-        filterTags: ['Gastronomy', 'Cuisine Type'],
-        link: 'Courses/GastronomyFood.html'
-    },
-    {
         name: 'Asian',
         mainImg: 'Assets/Imgs/Asian/1.jpeg',
         mainText: 'Explore the diverse and vibrant flavors of Asian cuisine...',
@@ -110,5 +103,12 @@ export const courses = [
         mainText: 'Discover the rich traditions and refined techniques of French culinary arts...',
         filterTags: ['French cuisine', 'Cuisine Type'],
         link: 'Courses/FrenchCusine.html'
+    },
+    {
+        name: 'Gastronomy Food',
+        mainImg: 'Assets/Imgs/Gastronomy/1.jpeg',
+        mainText: 'A Gastronomy Food course introduces the art and science of food, focusing on flavor, appearance, texture, and the overall dining experience...',
+        filterTags: ['Gastronomy', 'Cuisine Type'],
+        link: 'Courses/GastronomyFood.html'
     }
-];
+]

@@ -7,6 +7,13 @@ export const courses = [
         link: 'https://nobleshieldhygiene.com/'
     },
     {
+        name: 'Barista Course',
+        mainImg: 'Assets/Imgs/Barista/5.jpeg',
+        mainText: 'Master the art of coffee preparation and brewing with our comprehensive barista course...',
+        filterTags: ['Barista', 'Parista'],
+        link: 'Courses/Barista.html'
+    },
+    {
         name: 'Italian',
         mainImg: 'Assets/Imgs/Italian/1.jpeg',
         mainText: 'An Italian kitchen where tradition meets creativity...',
@@ -19,6 +26,13 @@ export const courses = [
         mainText: 'mmerse yourself in the flavors of the Middle East and the magic of Arabic cuisine...',
         filterTags: ['Middle east cuisine', 'Cuisine Type'],
         link: 'Courses/MiddleEast.html'
+    },
+    {
+        name: 'Gastronomy Food',
+        mainImg: 'Assets/Imgs/Gastronomy/1.jpeg',
+        mainText: 'A Gastronomy Food course introduces the art and science of food, focusing on flavor, appearance, texture, and the overall dining experience...',
+        filterTags: ['Gastronomy', 'Cuisine Type'],
+        link: 'Courses/GastronomyFood.html'
     },
     {
         name: 'Asian',
@@ -92,7 +106,7 @@ export const courses = [
     },
     {
         name: 'French cuisine',
-        mainImg: 'Assets/Imgs/Frenchcuisine/1.jpg',
+        mainImg: 'Assets/Imgs/Frenchcuisine/1.jpeg',
         mainText: 'Discover the rich traditions and refined techniques of French culinary arts...',
         filterTags: ['French cuisine', 'Cuisine Type'],
         link: 'Courses/FrenchCusine.html'
